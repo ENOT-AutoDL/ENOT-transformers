@@ -12,7 +12,7 @@ Our example notebooks automatically download the appropriate onnx and build engi
 ### GPT2-XL
 
 |   |TensorRT INT8+FP32|torch FP16|
-|---|:---:|:---:|:---:|
+|---|:---:|:---:|
 | **Lambada Acc** |72.11%|71.43%|
 | **Model size (GB)** |?|?|
 
