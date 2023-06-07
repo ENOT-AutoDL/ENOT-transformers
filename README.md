@@ -14,13 +14,13 @@ Our example notebooks automatically download the appropriate onnx and build engi
 |   |TensorRT INT8+FP32|torch FP16|
 |---|:---:|:---:|
 | **Lambada Acc** |72.11%|71.43%|
-| **Model size (GB)** |?|?|
+| **Model size (GB)** |2.0|3.2|
 
 ### GPT-J 6B
 
 |   |TensorRT INT8+FP32|torch FP16|torch FP32|
 |---|:---:|:---:|:---:|
-| **Lambada Acc** |78.79%|79.17%|-|
+| **Lambada Acc** |78.46%|79.53%|-|
 | **Model size (GB)**  |8.5|12.1|24.2|
 
 ### Test environment
