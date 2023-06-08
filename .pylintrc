@@ -1,0 +1,45 @@
+# https://github.com/PyCQA/pylint/blob/main/pylintrc
+
+[SIMILARITIES]
+# Minimum lines number of a similarity.
+min-similarity-lines=4
+# Ignore comments when computing similarities.
+ignore-comments=no
+# Ignore docstrings when computing similarities.
+ignore-docstrings=yes
+# Ignore imports when computing similarities.
+ignore-imports=yes
+
+[FORMAT]
+# Maximum number of characters on a single line.
+max-line-length=120
+
+[TYPECHECK]
+# List of module names for which member attributes should not be checked
+# (useful for modules/projects where namespaces are manipulated during runtime
+# and thus existing member attributes cannot be deduced by static analysis
+ignored-modules=numpy,torch,numpy.random,torch.optim,torch.nn,torch.nn.functional,tensorrt
+
+# List of members which are set dynamically and missed by pylint inference
+# system, and so shouldn't trigger E1101 when accessed. Python regular
+# expressions are accepted.
+generated-members=numpy.*,torch.*,tensorrt.*,onnx.*
+
+[DESIGN]
+# Maximum number of arguments for function / method
+max-args=12
+# Maximum number of locals for function / method body
+max-locals=30
+# Maximum number of statements in function / method body
+max-statements=60
+# Maximum number of attributes for a class (see R0902).
+max-attributes=20
+# Minimum number of public methods for a class (see R0903).
+min-public-methods=0
+# Maximum number of public methods for a class (see R0904).
+max-public-methods=20
+
+[MESSAGES]
+# We use fstring interpolation everywhere possible.
+# No time to write module docstrings. Replaced with descriptions in .rst files.
+disable=logging-fstring-interpolation,missing-module-docstring, unnecessary-pass
